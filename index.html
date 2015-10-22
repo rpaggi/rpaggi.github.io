@@ -5,7 +5,7 @@
 	<title>rpaggi's Page</title>
 </head>
 <body>
-	{% for post in site.teste %}
+	{% for post in site.posts %}
 		. <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
 	{% endfor %}
 </body>
