@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% for post in site.posts %}
-	<h5 class="grey-text text-lighten-2">{{ post.date | date_to_string }}<h5>
+	<h5 class="grey-text text-lighten-1">{{ post.date | date_to_string }}<h5>
 	<h3><a class="grey-text text-darken-1" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h3>
-	<p class="grey-text text-lighten-1">{{post.description}}...</p>
+	<p>{{post.description}}...</p>
 {% endfor %}
