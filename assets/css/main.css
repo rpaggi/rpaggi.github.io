@@ -1,6 +1,28 @@
 .header-bg{
-  background: url('../img/header-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 567px;
+  background: url('../img/header-bg.jpg') no-repeat center bottom / cover;
+  height: 380px;
+}
+
+.header-bar{
+  height: 20px;
+}
+
+.header-bar li{
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin: 0 6px;
+}
+
+.i-github{
+  background: url('../img/i-github.png') no-repeat center;
+
+}
+
+.i-twitter{
+  background: url('../img/i-twitter.png') no-repeat center;
+}
+
+.i-info{
+  background: url('../img/i-info.png') no-repeat center;
 }
