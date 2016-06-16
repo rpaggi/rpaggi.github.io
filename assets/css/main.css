@@ -11,6 +11,10 @@
   margin: 0;
 }
 
+.header-bar a{
+  font-weight: bold;
+}
+
 .header-bar ul li{
   display: inline-block;
   width: 26px;
