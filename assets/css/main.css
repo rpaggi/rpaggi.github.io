@@ -39,6 +39,10 @@
   min-height: 400px;
 }
 
+.post{
+  padding: 10px 0;
+}
+
 footer{
   height: 50px;
   color: #d1d0d4;
