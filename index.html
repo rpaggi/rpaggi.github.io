@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="post">	
-	{% for post in paginator.posts %}
+{% for post in paginator.posts %}
+	<div class="post">
 		<h5 class="grey-text">{{ post.date | date_to_string }}<h5>
 		<h3><a class="grey-text text-darken-2" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h3>
 		<p>{{post.description}}...</p>
-	{% endfor %}
-</div>
+	</div>
+{% endfor %}
 
 <div class="col s12 pagination">
   {% if paginator.previous_page %}
