@@ -24,3 +24,5 @@ compress_html:
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules', 'app']
+
+paginate: 2

@@ -2,8 +2,21 @@
 layout: default
 ---
 
-{% for post in site.posts limit:2 %}
+{% for post in site.posts %}
 	<h5 class="grey-text">{{ post.date | date_to_string }}<h5>
 	<h3><a class="grey-text text-darken-2" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h3>
 	<p>{{post.description}}...</p>
 {% endfor %}
+
+<div class="col s12 pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous col s2 offset-s2">Posts novos</a>
+  {% else %}
+    <span class="previous col s2">Posts novos</span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next col s2 offset-s4">Posts antigos</a>
+  {% else %}
+    <span class="next col s2 offset-s4">Posts antigos</span>
+  {% endif %}
+</div>
