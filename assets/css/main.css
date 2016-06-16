@@ -30,3 +30,20 @@
 .i-info{
   background: url('../img/i-info.png') no-repeat center;
 }
+
+.content{
+  min-height: 200px;
+}
+
+footer{
+  height: 30px;
+  color: #d1d0d4;
+}
+
+footer p{
+  padding-top: 3px;
+}
+
+.love{
+  color: red;
+}
