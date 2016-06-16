@@ -32,16 +32,16 @@
 }
 
 .content{
-  min-height: 300px;
+  min-height: 400px;
 }
 
 footer{
-  height: 30px;
+  height: 50px;
   color: #d1d0d4;
 }
 
 footer p{
-  padding-top: 3px;
+  padding-top: 13px;
 }
 
 .love{
