@@ -1,5 +1,6 @@
 .header-bg{
-  background: url('assets/img/header-bg');
+  background: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
+  background-position: center;
   height: 567px;
 }
