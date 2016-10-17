@@ -1,8 +1,8 @@
 # Site settings
-title: rpaggi
+title: Ronaldo Paggi Developer
 email: ronaldo.paggi@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Personal rpaggi's page
+  Ronaldo Paggi Developer
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://rpaggi.com.br" # the base hostname & protocol for your site
 twitter_username: rpaggi
