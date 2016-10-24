@@ -34,4 +34,5 @@ Quando foi lá por volta de 11AM vi no Slack a galera dizendo sobre fazer um ví
 E foi lá pelas 18 horas que meu joguinho estava pronto, do jeito que eu esperava que ficasse, então fiz um branch na página do projeto para o GitHub Pages e submeti meu projeto para o hackaton e finalmente pude descansar. Mas não consegui e fiquei acompanhando o slack até a hora de acabar o hackaton.
 
 [Link para o código fonte](http://github.com/rpaggi/run-mavis-run)
+
 [Link para jogar](http://rpaggi.com.br/run-mavis-run)
