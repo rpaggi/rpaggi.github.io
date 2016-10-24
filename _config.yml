@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://rpaggi.com.br" # the base hostname & protocol for your site
 twitter_username: rpaggi
 github_username:  rpaggi
+disqus_username: rpaggi
 
 # Build settings
 markdown: kramdown

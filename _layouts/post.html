@@ -2,13 +2,13 @@
 <html lang="pt-br">
     {% include head.html %}
     <body>
-        {% include header.html %}
         <section class="row content text-grey text-darken-1 post-text">
         <h1>{{ page.title }}</h1>
           <div class="col s8 offset-s2">
+            {% include header.html %}
             {{ content }}
+            {% include comments.html %}
           </div>
-        {% include comments.html %}
         </section>
         {% include footer.html %}
     </body>
