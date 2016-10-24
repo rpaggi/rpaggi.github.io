@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Como foi participar do Vanhackton"
+title: "Como foi participar do Vanhackaton"
 date: 2016-10-24 09:23:00
-description: 'Este final de semana rolou o Vanhackton, um hackaton promovido pela Vanhack, com vários desafios de diversas empresas Canadenses, dentre elas estavam: Thinkific, Pintellect, Grow Financial, Thalmic Labs, Shopify, Hootsuite, Dreamify, Mais Software, Biznas e a própria Vanhack.'
+description: 'Este final de semana rolou o Vanhackaton, um hackaton promovido pela Vanhack, com vários desafios de diversas empresas Canadenses, dentre elas estavam: Thinkific, Pintellect, Grow Financial, Thalmic Labs, Shopify, Hootsuite, Dreamify, Mais Software, Biznas e a própria Vanhack.'
 tags:
 - hackaton
 - vanhack
 categories:
-- Vanhackton
+- Vanhackaton
 image: '/assets/img/'
 ---
 
-Este final de semana rolou o Vanhackton, um hackaton promovido pela [Vanhack](https://vanhack.com), com vários desafios de diversas empresas Canadenses, dentre elas estavam: Thinkific, Pintellect, Grow Financial, Thalmic Labs, Shopify, Hootsuite, Dreamify, Mais Software, Biznas e a própria Vanhack.
+Este final de semana rolou o Vanhackaton, um hackaton promovido pela [Vanhack](https://vanhack.com), com vários desafios de diversas empresas Canadenses, dentre elas estavam: Thinkific, Pintellect, Grow Financial, Thalmic Labs, Shopify, Hootsuite, Dreamify, Mais Software, Biznas e a própria Vanhack.
 
 ### O desafio ###
 O hackaton começou na Sexta-feira, dia 21, às 8PM e terminou no Domingo, dia 23, às 8PM também, e dentre tantos desafios propostos o que eu mais gostei e aceitei foi o da empresa Biznas, que era para fazer um jogo simples(tipo um Pong ou um Space Invaders), browser based, usando HTML5 e Javascript, e eles davam um ponto a mais para quem o fizesse usando Angular2.
