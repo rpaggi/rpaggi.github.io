@@ -43,6 +43,10 @@
   padding: 10px 0;
 }
 
+.post-text{
+  font-size: 16px;
+}
+
 footer{
   height: 50px;
   color: #d1d0d4;
