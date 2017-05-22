@@ -35,4 +35,4 @@ E foi lá pelas 18 horas que meu joguinho estava pronto, do jeito que eu esperav
 
 [Link para o código fonte](http://github.com/rpaggi/run-mavis-run)
 
-[Link para jogar](http://rpaggi.com.br/run-mavis-run)
+[Link para jogar](http://rpaggi.github.io/run-mavis-run)
