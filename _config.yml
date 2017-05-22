@@ -3,7 +3,7 @@ title: Ronaldo Paggi Developer
 email: ronaldo.paggi@gmail.com
 description: Ronaldo Paggi Developer
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://rpaggi.com.br" # the base hostname & protocol for your site
+url: "http://rpaggi.github.io" # the base hostname & protocol for your site
 twitter_username: rpaggi
 github_username:  rpaggi
 disqus_username: rpaggi
