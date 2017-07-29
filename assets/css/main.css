@@ -60,6 +60,13 @@
   font-family: "Courrier New";
 }
 
+.post .highlight{
+  background-color: #353535;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
 .post-text{
   font-size: 18px;
   line-height: 30px;
