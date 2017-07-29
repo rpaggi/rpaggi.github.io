@@ -17,7 +17,7 @@ Uma forma simples que encontrei foi através do php-cli rodar um str_random(32),
 
 Primeiro, você precisa registrar seu comando de key generator, coloque [este Lumen Key Generator Command](https://gist.github.com/krisanalfa/0407dd822f2888226f45) em app/Console/Commands/KeyGenerateCommand.php.  
 Para deixar este comando disponivel no artisan, altere o arquivo app\Console\Kernel.php como abaixo:
-```
+```php
 /**
  * The Artisan commands provided by your application.
  *
@@ -29,8 +29,10 @@ protected $commands = [
 ...
 ```
 
+
+
 Depois disso, configure sua aplicação para que a instância Illuminate\Config\Repository tenha o valor de app.key. Para fazer isso altere o arquivo bootstrap/app.php como abaixo:
-```
+```php
 <?php
 
 require_once __DIR__.'/../vendor/autoload.php';
@@ -56,11 +58,15 @@ $app->configure('app');
 ...
 ```
 
+
+
 Depois disso, copie seu arquivo .env.example para .env
 ```
 cp .env.example .env
 ```
 **Ignore este passo se você já usa um arquivo .env.**
+
+
 
 Agora aproveite seu comando key:generate através de:
 ```

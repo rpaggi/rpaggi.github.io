@@ -3,9 +3,9 @@ layout: default
 ---
 
 {% for post in paginator.posts %}
-	<div class="post">
-		<h5 class="grey-text">{{ post.date | date_to_string }}<h5>
-		<h3><a class="grey-text text-darken-2" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h3>
+	<div class="post-list">
+		<span class="grey-text date">{{ post.date | date_to_string }}<span>
+		<h1><a class="grey-text text-darken-2" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h1>
 		<p>{{post.description}}...</p>
 	</div>
 {% endfor %}

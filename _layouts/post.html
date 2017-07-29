@@ -3,10 +3,12 @@
     {% include head.html %}
     <body>
         {% include header.html %}
-        <section class="row content text-grey text-darken-1 post-text">
-          <div class="col s8 offset-s2">
+        <section class="row content text-grey text-darken-1">
+          <div class="col s8 offset-s2 post">
             <h1>{{ page.title }}</h1>
-            {{ content }}
+            <span class="post-text">
+              {{ content }}
+            </span>
             {% include comments.html %}
           </div>
         </section>
