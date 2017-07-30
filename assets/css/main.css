@@ -72,6 +72,14 @@
   line-height: 30px;
 }
 
+.post-text ul{
+  padding-left: 30px;
+}
+
+.post-text ul li{
+  list-style-type: disc;
+}
+
 .post-list{
   padding: 20px 0;
 }

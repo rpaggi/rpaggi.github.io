@@ -12,9 +12,9 @@ image: '/assets/img/'
 Todo os dias nós desenvolvedores nos deparamos com links para artigos, notícias, cursos entre outros. 
 Eu comecei a salvar estes links num [repositório](https://github.com/rpaggi/teasure-box) mas não era muito frequente pois sempre que eu via algum link eu estava no trem a caminho do trabalho, então eu acabei pela praticidade compartilhando comigo mesmo no Telegram, ai toda vez que eu acesso a conversa comigo mesmo estão lá os links. 
 Mas esta semana eu estava pensando, porque não compilar estes links num post toda semana no meu blog? Então aqui estou para inciar esta saga.
-Neste post vou colocar todos os links que eu já tinha guardado no repositório e mais alguns outros, ou seja, nem todos foram encontrados esta semana! 
-
-Estes links abaixo eram os que estavam no repositório: 
+Neste post vou colocar todos os links que eu já tinha guardado no repositório e mais alguns outros, ou seja, nem todos foram encontrados esta semana.
+  
+Estes links abaixo eram os que estavam no repositório:  
 * [Map, filter and reduce by Emojis](http://rpaggi.github.io/posts_content/1501432277636.jpg)
 * [Diferença ilustrada do var, let e const](http://rpaggi.github.io/posts_content/1501432492049.jpg)
 * [O vício de começar programas novos e nunca terminá-los (e um pouco de MVP) by @thassiov](https://medium.com/@thassiov/o-v%C3%ADcio-de-come%C3%A7ar-programas-novos-e-nunca-termin%C3%A1-los-e-um-pouco-de-mvp-69666efe31f7)
@@ -36,7 +36,7 @@ Já estes eram alguns que estavam no meu Telegram:
 * [Pare de usar CSS no JavaScript para desenvolvimento web by Carlos Eduardo Olivieri](https://medium.com/@cadutech/pare-de-usar-css-no-javascript-para-desenvolvimento-web-b4a2e8fbb85e)
 * [Repositório com links sobre Machine Learning](https://github.com/CodingTrain/Machine-Learning)
 * [React: Anatomia de um componente by Rafael Guimarães](https://medium.com/@osanyin/react-anatomia-de-um-componente-9feabcf76928)
-* [Meu primeiro ano como dev by Leticia Portella\](https://medium.com/nossa-coletividad/meu-primeiro-ano-como-dev-256bb1a04a2b)
+* [Meu primeiro ano como dev by Leticia Portella](https://medium.com/nossa-coletividad/meu-primeiro-ano-como-dev-256bb1a04a2b)
 * [PHP “like a boss”: Como trabalhar com PHP em 2017 by William Correa](https://phpzm.rocks/php-like-a-boss-como-trabalhar-com-php-em-2017-f5161b8fbfd1)
 
 E agora sim os links que encontrei essa semana:
