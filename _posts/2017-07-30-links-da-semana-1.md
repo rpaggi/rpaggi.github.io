@@ -38,14 +38,14 @@ Já estes eram alguns que estavam no meu Telegram:
 * [Repositório com links sobre Machine Learning](https://github.com/CodingTrain/Machine-Learning)
 * [React: Anatomia de um componente by Rafael Guimarães](https://medium.com/@osanyin/react-anatomia-de-um-componente-9feabcf76928)
 * [Meu primeiro ano como dev by Leticia Portella](https://medium.com/nossa-coletividad/meu-primeiro-ano-como-dev-256bb1a04a2b)
-* [PHP “like a boss”: Como trabalhar com PHP em 2017 by William Correa](https://phpzm.rocks/php-like-a-boss-como-trabalhar-com-php-em-2017-f5161b8fbfd1)
+* [PHP “like a boss”: Como trabalhar com PHP em 2017 by William Correa](https://phpzm.rocks/php-like-a-boss-como-trabalhar-com-php-em-2017-f5161b8fbfd1)  
 <br>
 
 E agora sim os links que encontrei essa semana:
 * [Web Development Trends 2017](https://hackernoon.com/web-development-trends-2017-387421cf9c23)
 * [The Secret Sauce of Incredible Productivity by Mike Sturm](https://medium.com/personal-growth/the-secret-sauce-of-incredible-productivity-5a3b997a3b4)
 * [Primeiros passos de um desenvolvedor front-end by Thiago Capelo](https://medium.com/@thiagokpelo/primeiros-passos-de-um-desenvolvedor-front-end-c5bf24088a65)
-* [Migrei para o VSCode e estou feliz!](https://willianjusten.com.br/migrei-para-o-vscode-e-estou-feliz/)  
+* [Migrei para o VSCode e estou feliz!](https://willianjusten.com.br/migrei-para-o-vscode-e-estou-feliz/)    
 <br>
 
 Enfim, este ficou um pouco mais extenso pois quis colocar nele todos os links que eu havia guardado em achei relevante!
