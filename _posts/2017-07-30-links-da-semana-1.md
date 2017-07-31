@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Links da semana 1"
-date: 2017-07-29 13:08:00
+date: 2017-07-30 13:08:00
 description: 'O primeiro compilado de links que encontrei na semana e achei interessante!'
 tags:
 - links da semana
