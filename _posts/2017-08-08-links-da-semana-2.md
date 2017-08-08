@@ -9,8 +9,8 @@ categories:
 - Links da Semana
 image: '/assets/img/'
 ---
-![HÃÃÃÃÃÃNN ÕÕÕÕÕÕHH ÕÕÕÕÕÕAAHH ÃÃÃÃÃÃHNN](https://media.giphy.com/media/26BGDB5GuhcemasUM/giphy.gif)  
-Olha eu aqui denovo com meus links! Atrasado **PARA O CARAMBA**, até porque eu deveria ter colocado este post no Domingo e já é Terça!!!
+<center>![HÃÃÃÃÃÃNN ÕÕÕÕÕÕHH ÕÕÕÕÕÕAAHH ÃÃÃÃÃÃHNN](https://media.giphy.com/media/26BGDB5GuhcemasUM/giphy.gif)  
+Olha eu aqui denovo com meus links! Atrasado **PARA O CARAMBA**, até porque eu deveria ter colocado este post no Domingo e já é Terça!!!<center>
 
 Sem mais delongas vamos aos LINKS!!!
 <br>
