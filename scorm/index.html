@@ -21,11 +21,11 @@
 
     	window.onload = function(){
     		let lmsApi = LmsApi();
-    		// lmsApi.construct(JSON.parse(data.lmsData), data.apiUrl);
-    		// window.API = lmsApi;
+    		lmsApi.construct(JSON.parse(data.lmsData), data.apiUrl);
+    		window.API = lmsApi;
     		
-    		// let coursediv = document.getElementById('course-iframe');
-    		// coursediv.innerHTML = "<iframe id ='frame-curso' style='border:none; width:100%; height:100%;' src='/scormdriver/indexAPI.html' name='course'></iframe>"
+    		let coursediv = document.getElementById('course-iframe');
+    		coursediv.innerHTML = "<iframe id ='frame-curso' style='border:none; width:100%; height:100%;' src='/scormdriver/indexAPI.html' name='course'></iframe>"
     	}
     </script>
 </body>
