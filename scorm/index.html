@@ -19,7 +19,7 @@
 
     	window.onload = function(){
     		let lmsApi = LmsApi();
-    		lmsApi.construct(atob(JSON.parse(data.lmsData)), data.apiUrl);
+    		lmsApi.construct(JSON.parse(atob(data.lmsData)), data.apiUrl);
     		window.API = lmsApi;
     		
     		let coursediv = document.getElementById('course-iframe');
