@@ -13,15 +13,13 @@
 			data[params[x].split('=')[0]] = params[x].split('=')[1];
 		}
 
-		// let apidiv = document.getElementById('api-script');
-		// apidiv.innerHTML = '<script src="'+data.lmsApiLink+'"></'+'script>';
-		 var script = document.createElement("script");
-		 script.src = data.lmsApiLink;
-		 document.head.appendChild(script);
+		var script = document.createElement("script");
+		script.src = data.lmsApiLink;
+		document.head.appendChild(script);
 
     	window.onload = function(){
     		let lmsApi = LmsApi();
-    		lmsApi.construct(JSON.parse(data.lmsData), data.apiUrl);
+    		lmsApi.construct(atob(JSON.parse(data.lmsData)), data.apiUrl);
     		window.API = lmsApi;
     		
     		let coursediv = document.getElementById('course-iframe');
