@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height:100%">
 <head>
 </head>
-<body>
+<body style="height:100%">
     <div id="api-script"></div>
-    <div id="course-iframe"></div>
+    <div id="course-iframe" style="height:100%"></div>
 
     <script>
 		let params = location.href.split('?')[1].split('&');
@@ -19,7 +19,7 @@
 
     	window.onload = function(){
     		let lmsApi = LmsApi();
-    		lmsApi.construct(JSON.parse(atob(data.lmsData)), data.apiUrl);
+    		lmsApi.construct(JSON.parse(atob(data.lmsData)), data.apiUrl, data.apiToken);
     		window.API = lmsApi;
     		
     		let coursediv = document.getElementById('course-iframe');
