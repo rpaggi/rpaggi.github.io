@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+
+    <title>Curso para tentar tentativas que o user pode na prova</title>
+
+    <link type="text/css" rel="stylesheet" href="lib/icomoon.css">
+    <link type="text/css" rel="stylesheet" href="lib/main.bundle.css">
+    <script type="text/javascript" src="lib/player-0.0.11.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <style>
+      
+        @font-face {
+          font-family: 'Lato';
+          src: url('lib/fonts/Lato-Light.woff') format('woff');
+          font-weight: 300;
+          font-style:  normal;
+        }
+      
+        @font-face {
+          font-family: 'Lato';
+          src: url('lib/fonts/Lato-Regular.woff') format('woff');
+          font-weight: 400;
+          font-style:  normal;
+        }
+      
+        @font-face {
+          font-family: 'Lato';
+          src: url('lib/fonts/Lato-Bold.woff') format('woff');
+          font-weight: 700;
+          font-style:  normal;
+        }
+      
+        @font-face {
+          font-family: 'Lato';
+          src: url('lib/fonts/Lato-Italic.woff') format('woff');
+          font-weight: 400;
+          font-style:  italic;
+        }
+      
+        @font-face {
+          font-family: 'Lato';
+          src: url('lib/fonts/Lato-Black.woff') format('woff');
+          font-weight: 900;
+          font-style:  normal;
+        }
+      
+        @font-face {
+          font-family: 'Merriweather';
+          src: url('lib/fonts/Merriweather-Light.woff') format('woff');
+          font-weight: 300;
+          font-style:  normal;
+        }
+      
+        @font-face {
+          font-family: 'Merriweather';
+          src: url('lib/fonts/Merriweather-Regular.woff') format('woff');
+          font-weight: 400;
+          font-style:  normal;
+        }
+      
+        @font-face {
+          font-family: 'Merriweather';
+          src: url('lib/fonts/Merriweather-Bold.woff') format('woff');
+          font-weight: 700;
+          font-style:  normal;
+        }
+      
+        @font-face {
+          font-family: 'Merriweather';
+          src: url('lib/fonts/Merriweather-Italic.woff') format('woff');
+          font-weight: 400;
+          font-style:  italic;
+        }
+      
+        @font-face {
+          font-family: 'Merriweather';
+          src: url('lib/fonts/Merriweather-Black.woff') format('woff');
+          font-weight: 900;
+          font-style:  normal;
+        }
+      
+
+      .brand--head, .brand--head *   { font-family: 'Lato' !important; }
+      .brand--body, .brand--body *   { font-family: 'Merriweather' !important; }
+      .brand--lhead, .brand--lhead * { font-family: 'Lato' !important; }
+      .brand--lbody, .brand--lbody * { font-family: 'Merriweather' !important; }
+      .brand--ui, .brand--ui *       { font-family: 'Lato' !important; }
+
+      .brand--beforeHead:before { font-family: 'Lato' !important; }
+      .brand--afterHead:after { font-family: 'Lato' !important; }
+
+      .brand--background        { background-color: #FF631E !important; }
+      .brand--background-all *  { background-color: #FF631E !important; }
+      .brand--border            { border-color: #FF631E !important; }
+      .brand--color             { color: #FF631E !important; }
+      .brand--color-all *       { color: #FF631E !important; }
+      .brand--shadow            { box-shadow: 0 0 0 0.2rem #FF631E !important; }
+      .brand--shadow-all *      { box-shadow: 0 0 0 0.2rem #FF631E !important; }
+      .brand--fill              { fill: #FF631E !important; }
+      .brand--stroke            { stroke: #FF631E !important; }
+
+      .brand--beforeBackground:before { background-color: #FF631E !important; }
+      .brand--beforeBorder:before     { border-color: #FF631E !important; }
+      .brand--beforeColor:before      { color: #FF631E !important; }
+
+      .brand--afterBackground:after { background-color: #FF631E !important; }
+      .brand--afterBorder:after     { border-color: #FF631E !important; }
+      .brand--afterColor:after      { color: #FF631E !important; }
+
+      /* should be applied to containers where links
+         need to appear in brand color */
+      .brand--linkColor a { color: #FF631E !important; }
+
+      /* should be applied to containers where links
+         need to change to brand color on hover */
+      .brand--linkColorHover a:hover { color: #FF631E !important; }
+
+      /* should be applied to any single element that
+         needs to change color on hover */
+      .brand--hoverColor:hover { color: #FF631E !important; }
+
+      /* TODO: probably need a way to create a 5-10% darker/lighter color */
+      .brand--linkColor a:hover,
+      .button.brand--background:hover { opacity: .65 !important; }
+
+      @media (min-width: 47.9375em) { /* 768px */
+        .brand--min768--background { background-color: #FF631E !important; }
+        .brand--min768--border     { border-color: #FF631E !important; }
+        .brand--min768--color      { color: #FF631E !important; }
+      }
+
+      @media (max-width: 47.9375em) { /* 768px */
+        .brand--max768--background { background-color: #FF631E !important; }
+        .brand--max768--border     { border-color: #FF631E !important; }
+        .brand--max768--color      { color: #FF631E !important; }
+      }
+    </style>
+    <div id="app"></div>
+    <script>
+  (function(root) {
+    var data = 'eyJ0aXRsZSI6IkN1cnNvIHBhcmEgdGVudGFyIHRlbnRhdGl2YXMgcXVlIG8gdXNlciBwb2RlIG5hIHByb3ZhIiwiaWQiOiJKVzlJWUxYUWZpeE5KME10ZEFpUDdOUXdXaVdaeVNPRCIsIm9yaWdpbmFsSWQiOm51bGwsImF1dGhvciI6ImF1dGgwfDU5YmZkNDQ5YWI5M2Q2NTkyZjI2YjA1ZiIsInNlbGVjdGVkQXV0aG9ySWQiOiIiLCJjb2xvciI6IiNGRjYzMUUiLCJuYXZpZ2F0aW9uTW9kZSI6ImZyZWUiLCJzaGFyZVBhc3N3b3JkIjoiIiwiZGVzY3JpcHRpb24iOiIiLCJzaGFyZUlkIjoic2N4aXE0RERmNi15ZDZiakdvUmc3ODFLZnM2US1VbHciLCJjb3B5T2YiOiIiLCJvcmRlciI6IjE1MTY0NTE4MzQzNjciLCJmb250cyI6bnVsbCwibWVkaWEiOnt9LCJjb3ZlckltYWdlIjp7fSwibGVzc29ucyI6W3siaWQiOiJWTXhSeVl3NVFWVDA2b2s4Z0g2Rklxbm43aGVxM3d5VSIsIm9yaWdpbmFsSWQiOm51bGwsImF1dGhvciI6ImF1dGgwfDU5YmZkNDQ5YWI5M2Q2NTkyZjI2YjA1ZiIsInNlbGVjdGVkQXV0aG9ySWQiOiJhdXRoMHw1OWJmZDQ0OWFiOTNkNjU5MmYyNmIwNWYiLCJjb3Vyc2VJZCI6IkpXOUlZTFhRZml4TkowTXRkQWlQN05Rd1dpV1p5U09EIiwidGl0bGUiOiJRdWl6IiwiZGVzY3JpcHRpb24iOiIiLCJ0eXBlIjoicXVpeiIsImljb24iOiJRdWl6IiwiaXRlbXMiOlt7ImlkIjoiY2pjbmMxYWo1MDAxbjNjNjk3d3BzM3gzdyIsInR5cGUiOiJNVUxUSVBMRV9DSE9JQ0UiLCJ0aXRsZSI6IkVudGVyIGEgcXVlc3Rpb24gdGl0bGUgaGVyZS4uLiIsImFuc3dlcnMiOlt7ImlkIjoiY2pjbmMxYWo1MDAxbzNjNjlmd2JvM2ZiMyIsInRpdGxlIjoiQ2hvaWNlIDEiLCJmZWVkYmFjayI6IiJ9LHsiaWQiOiJjamNuYzFhajUwMDFwM2M2OW1meTU4ZXhvIiwidGl0bGUiOiJDaG9pY2UgMiIsImZlZWRiYWNrIjoiIn1dLCJjb3JyZWN0IjoiY2pjbmMxYWo1MDAxbzNjNjlmd2JvM2ZiMyIsImNvcnJlY3RzIjpbImNqY25jMWFqNTAwMW8zYzY5ZndibzNmYjMiXSwiZmVlZGJhY2siOiIifSx7ImlkIjoiY2pjbmMxYWo1MDAxcTNjNjlsdW44MXhieiIsInR5cGUiOiJNVUxUSVBMRV9DSE9JQ0UiLCJ0aXRsZSI6IkVudGVyIGEgcXVlc3Rpb24gdGl0bGUgaGVyZS4uLiIsImFuc3dlcnMiOlt7ImlkIjoiY2pjbmMxYWo2MDAxcjNjNjl0YXI2Y2JyMyIsInRpdGxlIjoiQ2hvaWNlIDEiLCJmZWVkYmFjayI6IiJ9LHsiaWQiOiJjamNuYzFhajYwMDF0M2M2OXF3anRua3BwIiwidGl0bGUiOiJDaG9pY2UgMiIsImZlZWRiYWNrIjoiIn0seyJpZCI6ImNqY25jMWFqNjAwMXUzYzY5bjZhZWtyM28iLCJ0aXRsZSI6IkNob2ljZSAzIiwiZmVlZGJhY2siOiIifSx7ImlkIjoiY2pjbmMxYWo2MDAxczNjNjk0dnpkaXdhayIsInRpdGxlIjoiQ2hvaWNlIDQiLCJmZWVkYmFjayI6IiJ9XSwiY29ycmVjdCI6ImNqY25jMWFqNjAwMXIzYzY5dGFyNmNicjMiLCJjb3JyZWN0cyI6WyJjamNuYzFhajYwMDFyM2M2OXRhcjZjYnIzIiwiY2pjbmMxYWo2MDAxczNjNjk0dnpkaXdhayJdLCJmZWVkYmFjayI6IiJ9XSwibWVkaWEiOnt9LCJwaWxlcyI6W10sInNldHRpbmdzIjp7InJldHJ5UXVpeiI6dHJ1ZSwicmV0cnlDb3VudCI6IjMiLCJwYXNzaW5nU2NvcmUiOjUwLCJyZXZlYWxBbnN3ZXJzIjp0cnVlLCJwYXNzVG9Db250aW51ZSI6dHJ1ZSwic2h1ZmZsZUFuc3dlckNob2ljZXMiOmZhbHNlLCJyYW5kb21pemVRdWVzdGlvbk9yZGVyIjpmYWxzZX0sImR1cGxpY2F0ZWRGcm9tSWQiOiIiLCJkZWxldGVkIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAxOC0wMS0yMFQxMjozNTowNi42MDNaIiwidXBkYXRlZEF0IjoiMjAxOC0wMS0yMFQxMjozNjo1Ny43NTdaIiwibGFzdFVwZGF0ZWRCeSI6ImF1dGgwfDU5YmZkNDQ5YWI5M2Q2NTkyZjI2YjA1ZiIsInJlYWR5Ijp0cnVlfV0sImpvYnMiOltdLCJsYWJlbFNldElkIjoiIiwiZGVsZXRlZCI6ZmFsc2UsImNyZWF0ZWRBdCI6IjIwMTgtMDEtMjBUMTI6MzA6NDUuMzE5WiIsInVwZGF0ZWRBdCI6IjIwMTgtMDEtMjBUMTI6Mzc6MTQuMzY3WiIsIm1hcmtDb21wbGV0ZSI6ZmFsc2UsImlzRGVmYXVsdCI6ZmFsc2UsInJlYWR5Ijp0cnVlLCJleHBvcnRTZXR0aW5ncyI6eyJ0aXRsZSI6IkN1cnNvIHBhcmEgdGVudGFyIHRlbnRhdGl2YXMgcXVlIG8gdXNlciBwb2RlIG5hIHByb3ZhIiwiZm9ybWF0IjoiemlwIiwicXVpeklkIjoiVk14UnlZdzVRVlQwNm9rOGdINkZJcW5uN2hlcTN3eVUiLCJ0YXJnZXQiOiJzY29ybTEyIiwiYWN0aXZlTE1TIjowLCJyZXBvcnRpbmciOiJwYXNzZWQtaW5jb21wbGV0ZSIsImlkZW50aWZpZXIiOiJKVzlJWUxYUWZpeE5KME10ZEFpUDdOUXdXaVdaeVNPRF9yaXNlIiwidGFyZ2V0TmFtZSI6IlNDT1JNIDEuMiIsImNvbXBsZXRlV2l0aCI6InF1aXoiLCJxdWl6Q29tcGxldGUiOnRydWUsImFjdGl2ZUVkaXRpb24iOjAsImVuYWJsZUV4aXRDb3Vyc2UiOmZhbHNlLCJjb21wbGV0aW9uUGVyY2VudGFnZSI6MTAwfSwicmV2aWV3SWQiOiIiLCJoZWFkaW5nVHlwZWZhY2VJZCI6Il92eTlJVnFSUHd6NndRbEtpMHdzQTlkc1lwWjdnc1EzIiwiYm9keVR5cGVmYWNlSWQiOiJXc3R1MWxWa1JfclVzQXVVNngxTl9VSW13Y2h6eWdqMiIsInVpVHlwZWZhY2VJZCI6Il92eTlJVnFSUHd6NndRbEtpMHdzQTlkc1lwWjdnc1EzIiwic2lkZWJhck1vZGUiOiJvcGVuIiwiYXV0aG9ycyI6W3siaWQiOiJhdXRoMHw1OWJmZDQ0OWFiOTNkNjU5MmYyNmIwNWYiLCJhdmF0YXIiOiI0SXB6SUR0XzhTQzRDUnZ4X3NtYWxsXzE1MTA0Mzk4MDkuanBnIiwiYXV0aG9yTmFtZSI6IlRoaWFnbyBHb21lcyJ9XSwiYm9keVR5cGVmYWNlIjoiTWVycml3ZWF0aGVyIiwiaGVhZGluZ1R5cGVmYWNlIjoiTGF0byIsInVpVHlwZWZhY2UiOiJMYXRvIiwibG1zT3B0aW9ucyI6eyJlbmFibGVFeGl0Q291cnNlIjpmYWxzZX19';
+    var labelSet = {"id":"b5VGd_aa0SVTQMvhA2t70pZr","author":"auth0|59bfd449ab93d6592f26b05f","name":"English","defaultId":1,"defaultSet":true,"labels":{"quizNext":"NEXT","quizScore":"Your score","quizStart":"START QUIZ","courseExit":"EXIT COURSE","lessonName":"Lesson","lessonNext":"NEXT LESSON","quizSubmit":"SUBMIT","courseStart":"START COURSE","embedViewOn":"VIEW ON","quizCorrect":"Correct","quizPassing":"PASSING","quizResults":"Quiz Results","courseResume":"RESUME COURSE","quizQuestion":"Question","courseDetails":"DETAILS","embedReadMore":"Read more","quizIncorrect":"Incorrect","quizTakeAgain":"TAKE AGAIN","sortingReplay":"Replay","lessonComplete":"COMPLETE","lessonPrevious":"PREVIOUS LESSON","processComplete":"Complete","processNextStep":"NEXT STEP","processStepName":"Step","lessonRestricted":"Lessons must be completed in order","blocksClickToFlip":"Click to flip","blocksPreposition":"of","lessonPreposition":"of","processLessonName":"Lesson","processStartAgain":"START AGAIN","sortingCardsCorrect":"Cards Correct","processStepPreposition":"of","courseHome":"Home","quizAcceptableResponses":"Acceptable responses","quizAnswerPlaceholder":"Type your answer here","quizRequirePassingScore":"Must pass quiz before continuing"},"deleted":false,"createdAt":"2017-09-18T14:13:09.040Z","updatedAt":"2017-09-18T14:13:09.040Z"};
+
+    var quizId = "VMxRyYw5QVT06ok8gH6FIqnn7heq3wyU";
+    var completionPercentage = 100;
+    var reporting = 'passed-incomplete';
+
+    var stuffToPick = [
+      'SetBookmark',   // set identifier for bookmark
+      'SetDataChunk',  // set a stringified object with lesson progress
+      'GetDataChunk',  // retreive stringified object with lesson progress
+      'SetReachedEnd', // tell LMS user completed course
+      'SetFailed', // tell LMS user Failed course
+      'SetPassed', // tell LMS user Passed the course
+      'SetScore', // Report Users Score to the LMS (for Pass and fail)
+      'GetStatus', // Get Current Status
+      'ResetStatus', // Reset the Status
+      'Finish',
+      'ConcedeControl'
+    ];
+
+    var LMSProxy = pick(stuffToPick, window.parent, Function.prototype);
+
+    finish(0);
+
+    var cache = getLMSData();
+
+    function assign(target) {
+  if (target === undefined || target === null) {
+    throw new TypeError('assign: Cannot convert undefined or null to object');
+  }
+
+  var output = Object(target);
+
+  for (var index = 1; index < arguments.length; index++) {
+    var source = arguments[index];
+    if (source !== undefined && source !== null) {
+      for (var nextKey in source) {
+        if (source.hasOwnProperty(nextKey)) {
+          output[nextKey] = source[nextKey];
+        }
+      }
+    }
+  }
+  return output;
+}
+
+function bookmark(id) {
+  var url = 'index.html#/lessons/' + id;
+
+  LMSProxy.SetBookmark(url, '');
+}
+
+function completeOut(passed) {
+  if(passed) {
+    switch(reporting) {
+      case 'completed-incomplete':
+      case 'completed-failed':
+        LMSProxy.ResetStatus();
+        LMSProxy.SetReachedEnd();
+        break;
+
+      case 'passed-incomplete':
+      case 'passed-failed':
+        LMSProxy.SetPassed();
+        LMSProxy.SetReachedEnd();
+        break;
+    }
+  } else {
+    switch(reporting) {
+      case 'passed-failed':
+      case 'completed-failed':
+        if(!isPassed()) {
+          LMSProxy.SetFailed();
+        }
+        break;
+    }
+  }
+}
+
+function concatLMSData(data) {
+  assign(cache, data);
+
+  LMSProxy.SetDataChunk(JSON.stringify(cache));
+}
+
+function createHistory(browserFunc, hashFunc) {
+  return hashFunc;
+}
+
+function debounce(fn, delay) {
+  var timer = null;
+
+  return function () {
+    var context = this, args = arguments;
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      fn.apply(context, args);
+    }, delay);
+  };
+}
+
+function exit() {
+  LMSProxy.ConcedeControl();
+}
+
+function fetch(decode) {
+  return decode(data);
+}
+
+function fetchLabelSet() {
+  return labelSet;
+}
+
+function finish(totalProgress) {
+  if (
+    quizId === null &&
+    completionPercentage != undefined &&
+    totalProgress >= completionPercentage
+  ) {
+    completeOut(true);
+  }
+}
+
+function finishQuiz(passed, score, id) {
+  if (id == quizId) {
+    reportScore(score);
+    completeOut(passed);
+  }
+}
+
+function getLMSData() {
+  if(!cache) {
+    return JSON.parse(LMSProxy.GetDataChunk() || '{}');
+  }
+
+  return cache;
+}
+
+function getProgress() {
+  var progress = assign({}, { progress: { lessons: {} } }, getLMSData()).progress;
+
+  return progress;
+}
+
+function isPassed() {
+  return LMSProxy.GetStatus() === window.parent.LESSON_STATUS_PASSED;
+}
+
+function pick(keys, obj, def) {
+  return keys.reduce(function(memo, key) {
+    if(obj[key] === undefined) {
+      if(def !== undefined) {
+        memo[key] = def;
+      }
+    } else {
+      memo[key] = obj[key];
+    }
+
+    return memo;
+  }, {});
+}
+
+function reportScore(score) {
+  var highScore = Math.max(getLMSData().score || 0, score);
+  concatLMSData({ score: highScore });
+
+  LMSProxy.SetScore(highScore, 100, 0);
+}
+
+function resolvePath(path) {
+  return ('assets/').concat(path);
+}
+
+function setLessonProgress(lessonProgress) {
+  var currentProgress = getProgress();
+  var lessons = assign({}, currentProgress.lessons, lessonProgress);
+  var progress = assign({}, currentProgress, { lessons: lessons });
+
+  concatLMSData({ progress: progress });
+}
+
+function setCourseProgress(courseProgress) {
+  var currentProgress = getProgress();
+  var progress = assign({}, currentProgress, courseProgress);
+
+  concatLMSData({ progress: progress });
+}
+
+root.Runtime = {
+  bookmark: bookmark,
+  createHistory: createHistory,
+  exit: exit,
+  fetch: fetch,
+  fetchLabelSet: fetchLabelSet,
+  finish: finish,
+  finishQuiz: finishQuiz,
+  getProgress: getProgress,
+  resolvePath: resolvePath,
+  setCourseProgress: debounce(setCourseProgress, 500),
+  setLessonProgress: debounce(setLessonProgress, 500)
+};
+
+  }(window));
+</script>
+
+    <script src="lib/main.bundle.js"></script>
+  </body>
+</html>
