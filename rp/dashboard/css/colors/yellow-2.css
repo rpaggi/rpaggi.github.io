@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+a {
+color: #33ffff;
+}
+
+p a {
+color: #33ffff;
+}
+
+#main-menu {
+background: rgba(51, 255, 255, .95);
+}
+
+.color-me {
+color: #33ffff;
+}
+
+.awesome {
+color: #33ffff;
+}
+
+.awesome2 {
+font-family: sans-serif;
+color: #9999ff;
+text-shadow: 3px 3px 6px #000;
+}
+
+.fundador {
+font-family: Verdana;
+font-weight: bold;
+color: #80ffff;
+text-shadow: 3px 3px 6px #000;
+}
+
+.admin {
+font-family: Verdana;
+font-weight: bold;
+color: #cc0000;
+text-shadow: 3px 3px 6px #000;
+}
+
+.mod {
+font-family: Verdana;
+font-weight: bold;
+color: #00ff00;
+text-shadow: 3px 3px 6px #000;
+}
+
+.suporte {
+font-family: Verdana;
+font-weight: bold;
+color: #ff3399;
+text-shadow: 3px 3px 6px #000;
+}
+
+.intro-subtitle {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 4px;
+	right: 0;
+	top: 113px;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	text-shadow: 1px 1px 2px #111;
+	color: #fff;
+	letter-spacing: .5em;
+	text-transform: uppercase;
+	background: #46EDFA;
+	line-height: 22px;
+	text-align: center;
+	width: 174px;
+	height: 25px
+}
+
+.bottom-creditz {
+	position: fixed;
+	display: block;
+	visibility: visible;
+	width: auto;
+	height: 90px;
+	right: -12.5vh;
+	bottom: 0px;
+	font-size: 9px;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: .05em;
+	font-weight: 600;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-transition: all 1.5s ease;
+	-moz-transition: all 1.5s ease;
+	-ms-transition: all 1.5s ease;
+	-o-transition: all 1.5s ease;
+	transition: all 1.5s ease;
+	z-index: 1001
+}
+
+.bottom-credits.bottom-position {
+	-webkit-transform: translateY(200px);
+	-moz-transform: translateY(200px);
+	-ms-transform: translateY(200px);
+	-o-transform: translateY(200px);
+	transform: translateY(200px);
+	-webkit-transition: all 1.5s ease;
+	-moz-transition: all 1.5s ease;
+	-ms-transition: all 1.5s ease;
+	-o-transition: all 1.5s ease;
+	transition: all 1.5s ease
+}
+
+
+@-webkit-keyframes glow {
+    0% {
+		border-color: #33ffff;
+		/* box-shadow: 0 0 5px rgba(0,0,0, .2), inset 0 0 5px rgba(0,0,0, .1); */
+    }	
+    100% {
+		border-color: #33ffff;
+		/* box-shadow: 0 0 20px rgba(0,0,0, .6), inset 0 0 10px rgba(0,0,0, .4); */
+    }
+}
+@-moz-keyframes glow {
+    0% {
+		border-color: #33ffff;
+		/* box-shadow: 0 0 5px rgba(0,0,0, .2), inset 0 0 5px rgba(0,0,0, .1); */
+    }	
+    100% {
+		border-color: #33ffff;
+		/* box-shadow: 0 0 20px rgba(0,0,0, .6), inset 0 0 10px rgba(0,0,0, .4); */
+    }
+}
+@-o-keyframes glow {
+    0% {
+		border-color: #33ffff;
+		/* box-shadow: 0 0 5px rgba(0,0,0, .2), inset 0 0 5px rgba(0,0,0, .1); */
+    }	
+    100% {
+		border-color: #33ffff;
+		/* box-shadow: 0 0 20px rgba(0,0,0, .6), inset 0 0 10px rgba(0,0,0, .4); */
+    }
+}
+@-ms-keyframes glow {
+    0% {
+		border-color: #33ffff;
+		/* box-shadow: 0 0 5px rgba(0,0,0, .2), inset 0 0 5px rgba(0,0,0, .1); */
+    }	
+    100% {
+		border-color: #33ffff;
+		/* box-shadow: 0 0 20px rgba(0,0,0, .6), inset 0 0 10px rgba(0,0,0, .4); */
+    }
+}
+@keyframes glow {
+    0% {
+		border-color: #33ffff;
+		/* box-shadow: 0 0 5px rgba(0,0,0, .2), inset 0 0 5px rgba(0,0,0, .1); */
+    }	
+    100% {
+		border-color: #33ffff;
+		/* box-shadow: 0 0 20px rgba(0,0,0, .6), inset 0 0 10px rgba(0,0,0, .4); */
+    }
+}
+
+.submit-button {
+color: #fff;
+background: #fff;
+}
+
+.submit-button::before {
+color: #fff;
+background: #33ffff;
+}
+
+.submit-button:hover {
+color: #000;
+background: #fff;
+}
+
+.submit-button-2 {
+color: #fff;
+background: #fff;
+}
+
+.submit-button-2::before {
+color: #fff;
+background: #33ffff;
+}
+
+.submit-button-2:hover {
+color: #000;
+background: #fff;
+}
+
+.owl-page.active span {    
+background: #33ffff;
+}
+
+.expand { 
+background: #33ffff;
+}
+
+/* Styleswitch [DEMO only] */
+.options-head {
+background: #33ffff;
+}
