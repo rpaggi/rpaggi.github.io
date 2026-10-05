@@ -260,3 +260,7 @@ a.tag-link:hover, .content a.tag-link:hover { color: var(--accent-strong); text-
 /* Rodapé discreto */
 .hextra-footer { font-family: var(--font-sans); }
 div:has(> #backToTop) { border-top: 0 !important; box-shadow: none !important; background: transparent !important; }
+
+/* Tabelas */
+.content table { font-family: var(--font-sans); }
+.content table :where(th, td) { font-size: 0.95rem; padding: 0.4rem 0.9rem; }
