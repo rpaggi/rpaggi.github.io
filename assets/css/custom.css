@@ -1,6 +1,6 @@
 /*
  * Layout inspirado no akitaonrails.com, com paleta cyberpunk:
- * magenta (links/ação) + ciano (detalhes), sobre fundos levemente lavanda.
+ * ciano/verde neon (links/ação) + roxo (detalhes), sobre fundos levemente lavanda.
  * Texto principal nunca é branco/preto puro, para não cansar na leitura.
  * Todas as cores ficam nas variáveis abaixo.
  */
@@ -14,19 +14,19 @@
   --heading: #14122b;
   --muted: #5d5880;
 
-  --accent: #b0137c;          /* magenta: links */
-  --accent-strong: #850b5c;
-  --accent-soft: rgba(176, 19, 124, 0.14);
-  --accent-2: #00778a;        /* ciano: marcadores, detalhes */
-  --accent-3: #5b34c9;        /* violeta: código inline */
+  --accent: #006b7d;          /* ciano: links */
+  --accent-strong: #004f5c;
+  --accent-soft: rgba(0, 107, 125, 0.14);
+  --accent-2: #6d28d9;        /* roxo: marcadores, detalhes */
+  --accent-3: #6d28d9;        /* roxo: código inline */
   --glow: none;
   --code-bg: var(--surface);
 
   /* syntax highlight */
-  --syn-keyword: #b0137c;
+  --syn-keyword: #6d28d9;
   --syn-string: #006a7a;
   --syn-number: #8a5a00;
-  --syn-func: #5b34c9;
+  --syn-func: #4f46e5;
   --syn-comment: #6e6990;
   --syn-punct: #24213d;
 
@@ -44,9 +44,9 @@
   --hx-color-gray-900: #14122b;
   --hx-color-slate-900: #14122b;
 
-  --primary-hue: 322deg;
-  --primary-saturation: 80%;
-  --primary-lightness: 38%;
+  --primary-hue: 189deg;
+  --primary-saturation: 100%;
+  --primary-lightness: 25%;
 
   --font-serif: "Source Serif 4", Charter, "Bitstream Charter", Georgia, Cambria, "Times New Roman", serif;
   --font-sans: "Source Sans 3", "Helvetica Neue", "Segoe UI", Arial, sans-serif;
@@ -61,18 +61,18 @@
   --heading: #f2eeff;
   --muted: #9890bb;
 
-  --accent: #ff6bcf;
-  --accent-strong: #ffa3e2;
-  --accent-soft: rgba(255, 107, 207, 0.22);
-  --accent-2: #4fe3ee;
-  --accent-3: #b69cff;
-  --glow: 0 0 18px rgba(255, 107, 207, 0.35);
+  --accent: #4fe3ee;
+  --accent-strong: #a5f3f8;
+  --accent-soft: rgba(79, 227, 238, 0.22);
+  --accent-2: #b98cff;
+  --accent-3: #c4a1ff;
+  --glow: 0 0 18px rgba(185, 140, 255, 0.4);
   --code-bg: var(--surface);
 
-  --syn-keyword: #ff6bcf;
+  --syn-keyword: #b98cff;
   --syn-string: #4fe3ee;
   --syn-number: #f5d76e;
-  --syn-func: #b69cff;
+  --syn-func: #8fb4ff;
   --syn-comment: #7d76a3;
   --syn-punct: #d9d4ec;
 
@@ -86,9 +86,9 @@
   --hx-color-gray-500: #7d76a3;
   --hx-color-slate-100: #f2eeff;
 
-  --primary-hue: 322deg;
-  --primary-saturation: 100%;
-  --primary-lightness: 71%;
+  --primary-hue: 184deg;
+  --primary-saturation: 82%;
+  --primary-lightness: 62%;
 }
 
 body { color: var(--text); }
@@ -341,7 +341,7 @@ div:has(> #backToTop) { border-top: 0 !important; box-shadow: none !important; b
 
 /* Logo do site com um toque neon */
 .hextra-nav-container nav > a:first-child span { color: var(--heading); }
-.dark .hextra-nav-container nav > a:first-child span { text-shadow: 0 0 12px rgba(79, 227, 238, 0.35); }
+.dark .hextra-nav-container nav > a:first-child span { text-shadow: 0 0 12px rgba(185, 140, 255, 0.45); }
 
 /* Linha neon sob a navbar */
 .hextra-nav-container::after {
@@ -354,4 +354,4 @@ div:has(> #backToTop) { border-top: 0 !important; box-shadow: none !important; b
   opacity: 0.8;
   pointer-events: none;
 }
-.dark .hextra-nav-container::after { box-shadow: 0 0 10px rgba(255, 107, 207, 0.45); }
+.dark .hextra-nav-container::after { box-shadow: 0 0 10px rgba(79, 227, 238, 0.4); }
