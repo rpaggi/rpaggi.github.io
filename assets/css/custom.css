@@ -1,43 +1,94 @@
 /*
- * Identidade visual inspirada no akitaonrails.com:
- * fundo "papel", texto serifado para leitura, títulos sans, acento terracota.
- * Para trocar a cor de destaque, mexa só nas variáveis --accent*.
+ * Layout inspirado no akitaonrails.com, com paleta cyberpunk:
+ * magenta (links/ação) + ciano (detalhes), sobre fundos levemente lavanda.
+ * Texto principal nunca é branco/preto puro, para não cansar na leitura.
+ * Todas as cores ficam nas variáveis abaixo.
  */
 
-/* ---------- Paleta ---------- */
+/* ---------- Paleta: claro ("neon de dia") ---------- */
 :root {
-  --hx-color-white: #faf7f0;
-  --hx-color-gray-100: #f1ece0;
-  --hx-color-gray-200: #e8e2d2;
+  --bg: #f4f3f9;
+  --surface: #eae7f4;
+  --border: #dcd8ec;
+  --text: #24213d;
+  --heading: #14122b;
+  --muted: #5d5880;
 
-  --accent: #a63a1e;
-  --accent-strong: #7f2a12;
-  --accent-soft: rgba(166, 58, 30, 0.13);
-  --text: #2a2622;
-  --code-bg: #f1ece0;
+  --accent: #b0137c;          /* magenta: links */
+  --accent-strong: #850b5c;
+  --accent-soft: rgba(176, 19, 124, 0.14);
+  --accent-2: #00778a;        /* ciano: marcadores, detalhes */
+  --accent-3: #5b34c9;        /* violeta: código inline */
+  --glow: none;
+  --code-bg: var(--surface);
 
-  --primary-hue: 20deg;
-  --primary-saturation: 62%;
-  --primary-lightness: 44%;
+  /* syntax highlight */
+  --syn-keyword: #b0137c;
+  --syn-string: #006a7a;
+  --syn-number: #8a5a00;
+  --syn-func: #5b34c9;
+  --syn-comment: #6e6990;
+  --syn-punct: #24213d;
+
+  /* cores do Hextra (fundo, rodapé, cinzas, cor primária) */
+  --hx-color-white: var(--bg);
+  --hx-color-gray-50: #f7f6fc;
+  --hx-color-gray-100: var(--surface);
+  --hx-color-gray-200: var(--border);
+  --hx-color-gray-300: #c9c4de;
+  --hx-color-gray-400: #8f89ae;
+  --hx-color-gray-500: #5d5880;
+  --hx-color-gray-600: #4a4568;
+  --hx-color-gray-700: #36324f;
+  --hx-color-gray-800: #24213d;
+  --hx-color-gray-900: #14122b;
+  --hx-color-slate-900: #14122b;
+
+  --primary-hue: 322deg;
+  --primary-saturation: 80%;
+  --primary-lightness: 38%;
 
   --font-serif: "Source Serif 4", Charter, "Bitstream Charter", Georgia, Cambria, "Times New Roman", serif;
   --font-sans: "Source Sans 3", "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 }
 
+/* ---------- Paleta: escuro ("Night City") ---------- */
 .dark {
-  --hx-color-dark: #1a1714;
-  --hx-color-neutral-800: #2a2520;
-  --hx-color-neutral-900: #23201c;
+  --bg: #0f0d1c;
+  --surface: #18152c;
+  --border: #2b2647;
+  --text: #d9d4ec;
+  --heading: #f2eeff;
+  --muted: #9890bb;
 
-  --accent: #e2a05a;
-  --accent-strong: #f2bd82;
-  --accent-soft: rgba(226, 160, 90, 0.16);
-  --text: #e8e2d6;
-  --code-bg: #23201c;
+  --accent: #ff6bcf;
+  --accent-strong: #ffa3e2;
+  --accent-soft: rgba(255, 107, 207, 0.22);
+  --accent-2: #4fe3ee;
+  --accent-3: #b69cff;
+  --glow: 0 0 18px rgba(255, 107, 207, 0.35);
+  --code-bg: var(--surface);
 
-  --primary-hue: 32deg;
-  --primary-saturation: 68%;
-  --primary-lightness: 62%;
+  --syn-keyword: #ff6bcf;
+  --syn-string: #4fe3ee;
+  --syn-number: #f5d76e;
+  --syn-func: #b69cff;
+  --syn-comment: #7d76a3;
+  --syn-punct: #d9d4ec;
+
+  --hx-color-dark: var(--bg);
+  --hx-color-neutral-800: var(--border);
+  --hx-color-neutral-900: var(--surface);
+  --hx-color-gray-100: #f2eeff;
+  --hx-color-gray-200: #e2ddf3;
+  --hx-color-gray-300: #c4bde0;
+  --hx-color-gray-400: #9890bb;
+  --hx-color-gray-500: #7d76a3;
+  --hx-color-slate-100: #f2eeff;
+
+  --primary-hue: 322deg;
+  --primary-saturation: 100%;
+  --primary-lightness: 71%;
 }
 
 body { color: var(--text); }
@@ -63,6 +114,7 @@ main {
 .content :where(h1, h2, h3, h4, h5, h6),
 .post-header__title,
 .page-title {
+  color: var(--heading);
   font-family: var(--font-sans);
   font-weight: 700;
   letter-spacing: -0.012em;
@@ -92,8 +144,9 @@ main {
 
 /* Citações e separadores */
 .content blockquote {
-  border-inline-start: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
-  color: color-mix(in srgb, currentColor 78%, transparent);
+  border-inline-start: 2px solid;
+  border-image: linear-gradient(180deg, var(--accent), var(--accent-2)) 1;
+  color: color-mix(in srgb, var(--text) 82%, transparent);
   font-style: italic;
 }
 .content hr {
@@ -101,7 +154,8 @@ main {
   height: 1px;
   width: 60%;
   margin-inline: auto;
-  background: linear-gradient(90deg, transparent, color-mix(in srgb, currentColor 24%, transparent), transparent);
+  background: linear-gradient(90deg, transparent, var(--accent), var(--accent-2), transparent);
+  opacity: 0.55;
 }
 
 /* Listas com losango */
@@ -114,14 +168,14 @@ main {
   top: 0.7em;
   width: 0.4em;
   height: 0.4em;
-  background: var(--accent);
+  background: var(--accent-2);
   border-radius: 0.5px;
   transform: rotate(45deg);
   opacity: 0.9;
 }
 .content ul:not(.contains-task-list) ul > li::before {
   background: transparent;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--accent-2);
   opacity: 0.7;
 }
 .content ol > li::marker { color: var(--accent); font-weight: 600; }
@@ -131,11 +185,17 @@ main {
   font-size: 0.9em;
   line-height: 1.65;
   background: var(--code-bg);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border);
+  border-inline-start: 2px solid color-mix(in srgb, var(--accent-2) 70%, transparent);
 }
-.dark .hextra-code-block pre:not(.lntable pre) { border-color: rgba(255, 255, 255, 0.08); }
 .hextra-code-block code { font-variant-ligatures: none; }
-:where(.content code):not(.hextra-code-block code) { font-size: 0.85em; padding: 0.15em 0.35em; }
+:where(.content code):not(.hextra-code-block code) {
+  font-size: 0.85em;
+  padding: 0.15em 0.35em;
+  color: var(--accent-3);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
 
 /* Vídeos do YouTube: <div class="embed-container"><iframe ...></iframe></div> */
 .embed-container {
@@ -155,7 +215,7 @@ main {
   align-items: center;
   gap: 0.25rem;
   padding-inline: 0.25rem;
-  color: #6b7280;
+  color: var(--muted);
   font-family: var(--font-sans);
   font-size: 0.8rem;
   line-height: 1;
@@ -163,8 +223,7 @@ main {
 }
 .lang-toggle-link { color: inherit; font-weight: 600; padding: 0.4rem 0.1rem; text-decoration: none; }
 a.lang-toggle-link:hover { color: var(--accent); }
-.lang-toggle-active { color: #1f2937; font-weight: 700; border-bottom: 1px solid; }
-.dark .lang-toggle-active { color: #f3f4f6; }
+.lang-toggle-active { color: var(--heading); font-weight: 700; border-bottom: 1px solid var(--accent); }
 .lang-toggle-unavailable { opacity: 0.38; cursor: not-allowed; }
 .lang-toggle-separator { opacity: 0.55; }
 
@@ -177,7 +236,7 @@ a.lang-toggle-link:hover { color: var(--accent); }
 .page-title { font-size: 2rem; margin-top: 1.5rem; }
 .page-count {
   margin-top: 0.25rem;
-  color: color-mix(in srgb, currentColor 52%, transparent);
+  color: var(--muted);
   font-family: var(--font-sans);
   font-size: 0.85rem;
 }
@@ -187,7 +246,8 @@ a.lang-toggle-link:hover { color: var(--accent); }
   margin: 0 0 0.85rem;
   padding-bottom: 0.5rem;
   font-size: 1.75rem;
-  border-bottom: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg, var(--accent), var(--accent-2) 40%, var(--border) 70%) 1;
 }
 
 .content ul.post-list { margin: 0; }
@@ -214,15 +274,15 @@ a.tag-link {
   text-decoration: none;
   transition: color 0.12s ease;
 }
-.content a.tag-link { color: color-mix(in srgb, var(--text) 55%, transparent); }
-a.tag-link:hover, .content a.tag-link:hover { color: var(--accent-strong); text-decoration: underline; }
+.content a.tag-link, a.tag-link { color: var(--muted); }
+a.tag-link:hover, .content a.tag-link:hover { color: var(--accent-2); text-decoration: underline; }
 
 /* ---------- Página de post ---------- */
 .post-header { max-width: 68ch; margin: 2rem auto 3.5rem; text-align: center; }
-.post-header__title { font-family: var(--font-serif); font-weight: 600; font-size: clamp(1.9rem, 4vw, 2.5rem); letter-spacing: -0.02em; }
+.post-header__title { font-family: var(--font-serif); font-weight: 600; font-size: clamp(1.9rem, 4vw, 2.5rem); letter-spacing: -0.02em; text-shadow: var(--glow); }
 .post-header__meta {
   margin-top: 1.25rem;
-  color: color-mix(in srgb, currentColor 60%, transparent);
+  color: var(--muted);
   font-size: 0.85rem;
   font-style: italic;
 }
@@ -231,14 +291,19 @@ a.tag-link:hover, .content a.tag-link:hover { color: var(--accent-strong); text-
   max-width: 68ch;
   margin: 4rem auto 3rem;
   padding: 1.5rem;
-  border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+  border: 1px solid var(--border);
   border-radius: 0.75rem;
-  background: color-mix(in srgb, currentColor 2.5%, transparent);
+  background: var(--surface);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.next-post:hover {
+  border-color: color-mix(in srgb, var(--accent) 60%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 25%, transparent), var(--glow);
 }
 .next-post__label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #6b7280;
+  color: var(--accent-2);
   font-family: var(--font-sans);
   font-size: 0.75rem;
   font-weight: 600;
@@ -264,3 +329,29 @@ div:has(> #backToTop) { border-top: 0 !important; box-shadow: none !important; b
 /* Tabelas */
 .content table { font-family: var(--font-sans); }
 .content table :where(th, td) { font-size: 0.95rem; padding: 0.4rem 0.9rem; }
+
+/* Syntax highlight neon (sobrepõe o tema de código do Hextra nos dois modos) */
+:root .highlight .chroma { color: var(--syn-punct); }
+:root .highlight .chroma :is(.k, .kd, .kn, .kr, .kt, .kp, .kc, .ow, .nt) { color: var(--syn-keyword); }
+:root .highlight .chroma :is(.s, .s1, .s2, .sa, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss, .dl) { color: var(--syn-string); }
+:root .highlight .chroma :is(.m, .mb, .mf, .mh, .mi, .il, .mo, .l, .ld) { color: var(--syn-number); }
+:root .highlight .chroma :is(.nf, .fm, .nc, .nb, .bp, .na, .nd) { color: var(--syn-func); }
+:root .highlight .chroma :is(.c, .c1, .ch, .cm, .cp, .cpf, .cs, .gu) { color: var(--syn-comment); font-style: italic; }
+:root .highlight .chroma :is(.o, .p, .n, .nx, .nv, .no) { color: var(--syn-punct); }
+
+/* Logo do site com um toque neon */
+.hextra-nav-container nav > a:first-child span { color: var(--heading); }
+.dark .hextra-nav-container nav > a:first-child span { text-shadow: 0 0 12px rgba(79, 227, 238, 0.35); }
+
+/* Linha neon sob a navbar */
+.hextra-nav-container::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2) 55%, transparent);
+  opacity: 0.8;
+  pointer-events: none;
+}
+.dark .hextra-nav-container::after { box-shadow: 0 0 10px rgba(255, 107, 207, 0.45); }
