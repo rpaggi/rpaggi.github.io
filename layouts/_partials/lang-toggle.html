@@ -1,0 +1,19 @@
+{{- /* Seletor "PT | EN": leva para a tradução da página atual, ou fica esmaecido se não houver. */ -}}
+{{- $page := . -}}
+<span class="lang-toggle" aria-label="Idioma / Language">
+  {{- range $i, $s := hugo.Sites -}}
+    {{- if $i }}<span class="lang-toggle-separator" aria-hidden="true">|</span>{{ end -}}
+    {{- $lang := $s.Language -}}
+    {{- $label := $lang.Label | default (upper $lang.Lang) -}}
+    {{- if eq $lang.Lang $page.Language.Lang -}}
+      <span class="lang-toggle-link lang-toggle-active" aria-current="true">{{ $label }}</span>
+    {{- else -}}
+      {{- $target := index (where $page.Translations "Language.Lang" $lang.Lang) 0 -}}
+      {{- with $target -}}
+        <a class="lang-toggle-link" href="{{ .RelPermalink }}" hreflang="{{ $lang.Locale }}" lang="{{ $lang.Locale }}">{{ $label }}</a>
+      {{- else -}}
+        <span class="lang-toggle-link lang-toggle-unavailable" title="{{ T "translationUnavailable" }}">{{ $label }}</span>
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+</span>

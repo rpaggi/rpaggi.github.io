@@ -1,0 +1,18 @@
+{{- /* Coluna da direita com os meses (substitui o TOC nas listagens). Uso: partial "months-toc.html" $pages */ -}}
+{{- $groups := .GroupByDate "2006-01" "desc" -}}
+<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="{{ T "onThisPage" }}">
+  <div class="hextra-scrollbar hx:sticky hx:top-[var(--hextra-navbar-height)] hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm hx:max-h-[calc(100vh-var(--hextra-navbar-height)-env(safe-area-inset-bottom))]">
+    {{- with $groups -}}
+      <p class="hx:mb-4 hx:font-semibold hx:tracking-tight">{{ T "onThisPage" }}</p>
+      <ul>
+        {{- range . -}}
+          <li class="hx:my-2">
+            <a class="hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:w-full" href="#m-{{ .Key }}">
+              {{- partial "month-label.html" (index .Pages 0).Date -}}
+            </a>
+          </li>
+        {{- end -}}
+      </ul>
+    {{- end -}}
+  </div>
+</nav>

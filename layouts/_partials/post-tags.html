@@ -1,0 +1,11 @@
+{{- /* Tags de um post como links "#tag". Uso: partial "post-tags.html" (dict "page" . "class" "post-tags--list") */ -}}
+{{- $page := .page -}}
+{{- with $page.Params.tags -}}
+  <div class="post-tags {{ $.class }}">
+    {{- range . -}}
+      {{- with site.GetPage (printf "/tags/%s" (urlize .)) -}}
+        <a class="tag-link" href="{{ .RelPermalink }}">#{{ .Title | lower }}</a>
+      {{- end -}}
+    {{- end -}}
+  </div>
+{{- end -}}

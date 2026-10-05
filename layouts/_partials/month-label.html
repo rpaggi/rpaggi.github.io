@@ -1,0 +1,2 @@
+{{- /* "2026 - Outubro" a partir de uma data, no idioma da página */ -}}
+{{- printf "%s - %s" (.Format "2006") (time.Format "January" . | strings.FirstUpper) -}}

@@ -1,0 +1,18 @@
+{{- /* Lista de posts agrupada por mês. Uso: partial "post-list.html" $pages */ -}}
+{{- $groups := .GroupByDate "2006-01" "desc" -}}
+{{- range $groups -}}
+  {{- $date := (index .Pages 0).Date -}}
+  <section class="post-month" id="m-{{ .Key }}">
+    <h2 class="post-month__title">{{ partial "month-label.html" $date }}</h2>
+    <ul class="post-list">
+      {{- range .Pages.ByDate.Reverse -}}
+        <li class="post-list__item">
+          <a class="post-list__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{- partial "post-tags.html" (dict "page" . "class" "post-tags--list") -}}
+        </li>
+      {{- end -}}
+    </ul>
+  </section>
+{{- else -}}
+  <p class="post-list__empty">{{ T "noPosts" }}</p>
+{{- end -}}

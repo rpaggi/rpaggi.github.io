@@ -1,0 +1,114 @@
+baseURL: https://rpaggi.github.io/
+title: Ronaldo Paggi
+enableRobotsTXT: true
+enableGitInfo: true
+
+# PT-BR é o idioma padrão (servido na raiz /), EN fica em /en/.
+# Tradução por nome de arquivo: post.md (pt) + post.en.md (en).
+defaultContentLanguage: pt
+defaultContentLanguageInSubdir: false
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+# Posts ficam em content/posts/AAAA/slug.md (ou slug/index.md com imagens)
+# e são publicados como /AAAA/MM/DD/slug/ (slug = nome do arquivo/pasta)
+permalinks:
+  page:
+    posts: /:year/:month/:day/:contentbasename/
+
+taxonomies:
+  tag: tags
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+
+outputs:
+  home: [html, rss]
+  section: [html, rss]
+  taxonomy: [html]
+  term: [html, rss]
+
+services:
+  rss:
+    limit: 30
+
+languages:
+  pt:
+    locale: pt-BR
+    label: PT
+    weight: 1
+    params:
+      description: Blog do Ronaldo Paggi sobre desenvolvimento de software, tecnologia e carreira.
+    menus:
+      main:
+        - { name: Sobre, pageRef: /sobre, weight: 1 }
+        - { name: Arquivo, pageRef: /posts, weight: 2 }
+        - { name: GitHub, url: "https://github.com/rpaggi", weight: 3, params: { icon: github } }
+        - { name: Buscar, weight: 4, params: { type: search } }
+        - { name: RSS, url: /index.xml, weight: 5, params: { icon: rss } }
+        - { name: Idioma, weight: 6, params: { type: lang-toggle } }
+        - { name: Tema, weight: 7, params: { type: theme-toggle } }
+  en:
+    locale: en-US
+    label: EN
+    weight: 2
+    params:
+      description: Ronaldo Paggi's blog about software development, technology and career.
+    menus:
+      main:
+        - { name: About, pageRef: /sobre, weight: 1 }
+        - { name: Archive, pageRef: /posts, weight: 2 }
+        - { name: GitHub, url: "https://github.com/rpaggi", weight: 3, params: { icon: github } }
+        - { name: Search, weight: 4, params: { type: search } }
+        - { name: RSS, url: /en/index.xml, weight: 5, params: { icon: rss } }
+        - { name: Language, weight: 6, params: { type: lang-toggle } }
+        - { name: Theme, weight: 7, params: { type: theme-toggle } }
+
+params:
+  dateFormat: ":date_long"
+  # quantos posts mostrar na home (o resto fica no Arquivo)
+  homePostLimit: 30
+
+  navbar:
+    displayTitle: true
+    displayLogo: false
+    width: normal
+
+  page:
+    width: normal
+
+  theme:
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: false
+
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      index: content
+      tokenize: forward
+
+  toc:
+    displayTags: false
+
+  highlight:
+    copy:
+      enable: true
+      display: hover
+
+  editURL:
+    enable: false
