@@ -25,6 +25,8 @@ I started out writing **COBOL** batch and CICS programs on mainframes, went thro
 
 - **Back end:** Java, Spring Boot, PHP, Laravel
 - **Front end:** JavaScript, Vue.js, React, Tailwind
+- **Mobile:** React Native, Flutter
+- **AI:** agent-based development (Claude Code, Codex, OpenCode), skills, MCP, RAG, TensorFlow
 - **Cloud and infrastructure:** AWS (Lambda, ECS, DynamoDB, SQS, SNS, S3, KMS), Kafka, Docker
 - **Databases:** MySQL, Postgres, DB2, MongoDB, Redis, Firebase
 - **Mainframe:** COBOL batch and CICS

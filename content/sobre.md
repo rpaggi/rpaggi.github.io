@@ -25,6 +25,8 @@ Comecei programando **COBOL** batch e CICS em mainframe, passei pelo Java EE, PH
 
 - **Back-end:** Java, Spring Boot, PHP, Laravel
 - **Front-end:** JavaScript, Vue.js, React, Tailwind
+- **Mobile:** React Native, Flutter
+- **IA:** desenvolvimento com agentes (Claude Code, Codex, OpenCode), skills, MCP, RAG, TensorFlow
 - **Cloud e infraestrutura:** AWS (Lambda, ECS, DynamoDB, SQS, SNS, S3, KMS), Kafka, Docker
 - **Bancos de dados:** MySQL, Postgres, DB2, MongoDB, Redis, Firebase
 - **Mainframe:** COBOL batch e CICS
