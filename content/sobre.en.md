@@ -9,15 +9,17 @@ I started out writing **COBOL** batch and CICS programs on mainframes, went thro
 
 ## Career
 
-- **Banco Bradesco** (2025 → present): Tech Lead since August 2026; Software Engineer before that.
-- **Banco Itaú** (2022 – 2025): Java and Spring Boot microservices on AWS (ECS, S3, DynamoDB, SQS, SNS, KMS, Lambda), Kafka messaging, Custody and Open Finance projects, and performance monitoring and optimization.
-- **Alelo** (2020 – 2022): backend developer building APIs with Java 8 and Spring Boot.
-- **BRQ Digital Solutions** (2019 – 2020): systems analyst with Java EE, JSF, JSP, JDBC, Tomcat, WebSphere, RichFaces and PrimeFaces.
-- **Smartleader** (2018 – 2019, freelance): legacy system in PHP with Zend Framework 2, internal API in Laravel, and a Vue.js front end.
-- **BRQ** (2016 – 2019): Bradesco systems, first in COBOL batch and CICS on the Collections project, then in Java EE in the Internal Development Group.
-- **BovControl** (2017): fullstack, with an internal API in PHP and Laravel and a React dashboard; some services in Node.js, Python, MongoDB and Firebase.
-- **Foursys** (2015 – 2016) and **todo!** (2012 – 2015): systems analyst on Bradesco's Loans and Collections projects, in COBOL batch and CICS.
-- **CPM Braxis Capgemini** (2010 – 2012): trainee, then COBOL batch and CICS programmer on projects for Santander, Bradesco and SulAmérica Saúde.
+- **Banco Bradesco** (Feb 2025 → present): Tech Lead since August 2026; Software Engineer before that.
+- **Banco Itaú** (Mar 2022 – Jan 2025): Java and Spring Boot microservices on AWS (ECS, S3, DynamoDB, SQS, SNS, KMS, Lambda), Kafka messaging, Custody and Open Finance projects, and performance monitoring and optimization.
+- **Alelo** (Sep 2020 – Feb 2022): backend developer building APIs with Java 8 and Spring Boot.
+- **BRQ Digital Solutions** (Sep 2019 – Sep 2020): systems analyst with Java EE, JSF, JSP, JDBC, Tomcat, WebSphere, RichFaces and PrimeFaces.
+- **Smartleader** (Feb 2018 – Sep 2019, freelance on the side): legacy system in PHP with Zend Framework 2, internal API in Laravel, and a Vue.js front end.
+- **BRQ** (Sep 2017 – Jan 2019): systems analyst at Bradesco, first in COBOL batch and CICS on the Collections project, then in Java EE in the Internal Development Group.
+- **BovControl** (Jan 2017 – Aug 2017): fullstack, with an internal API in PHP and Laravel and a React dashboard; some services in Node.js, Python, MongoDB and Firebase.
+- **BRQ** (Feb 2016 – Jan 2017): systems analyst on Bradesco's Collections project, in COBOL batch and CICS.
+- **Foursys** (Nov 2015 – Feb 2016): systems analyst on Bradesco's Loans project.
+- **todo!** (Sep 2012 – Nov 2015): systems analyst on Bradesco's Collections project, in COBOL batch and CICS, working on-site at the client from 2013.
+- **CPM Braxis Capgemini** (Sep 2010 – Sep 2012): trainee, then COBOL batch and CICS programmer on projects for Santander, Bradesco and SulAmérica Saúde.
 
 ## Everyday tools
 
