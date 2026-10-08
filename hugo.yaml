@@ -112,3 +112,22 @@ params:
 
   editURL:
     enable: false
+
+  # Comentários via Giscus (GitHub Discussions) — chamado em layouts/posts/single.html
+  # via `partial "components/comments.html"`.
+  # Requer o app https://github.com/apps/giscus instalado no repo (já feito).
+  # Curtidas: reactionsEnabled: 1 — o 👍/❤️ de cada discussão funciona como "curtir".
+  comments:
+    enable: true
+    type: giscus
+    giscus:
+      repo: rpaggi/rpaggi.github.io
+      repoId: MDEwOlJlcG9zaXRvcnk0NDY3NjgxNA==
+      category: Announcements
+      categoryId: DIC_kwDOAqm2zs4DHTBX
+      mapping: pathname
+      strict: 0
+      reactionsEnabled: 1
+      emitMetadata: 0
+      inputPosition: top
+      # lang omitido de propósito: o tema usa site.Language.Lang (pt/en) automaticamente.

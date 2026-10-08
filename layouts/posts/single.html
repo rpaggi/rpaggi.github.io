@@ -29,7 +29,18 @@
             </nav>
           {{- end }}
         {{- end }}
-        {{ partial "components/comments.html" . }}
+        {{- /* Comentários (Giscus) + dica de curtida via reações */ -}}
+        {{- $enableComments := site.Params.comments.enable | default false -}}
+        {{ if not (eq .Params.comments nil) }}
+          {{ $enableComments = .Params.comments }}
+        {{ end }}
+        {{- if $enableComments }}
+          <section class="comments-section">
+            <h2 class="comments-section__title">{{ T "commentsTitle" }}</h2>
+            <p class="comments-section__hint">{{ T "commentsLikeHint" }}</p>
+            {{ partial "components/comments.html" . }}
+          </section>
+        {{- end }}
       </main>
     </article>
   </div>

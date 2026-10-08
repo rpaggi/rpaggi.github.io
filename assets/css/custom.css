@@ -343,6 +343,28 @@ div:has(> #backToTop) { border-top: 0 !important; box-shadow: none !important; b
 .hextra-nav-container nav > a:first-child span { color: var(--heading); }
 .dark .hextra-nav-container nav > a:first-child span { text-shadow: 0 0 12px rgba(185, 140, 255, 0.45); }
 
+/* ---------- Comentários (Giscus) ---------- */
+.comments-section {
+  max-width: 68ch;
+  margin: 3rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-sans);
+}
+.comments-section__title {
+  color: var(--heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.012em;
+}
+.comments-section__hint {
+  margin: 0.4rem 0 1.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.comments-section .giscus { margin-top: 0.5rem; }
+
 /* Linha neon sob a navbar */
 .hextra-nav-container::after {
   content: "";
